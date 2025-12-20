@@ -74,5 +74,5 @@ formElement.addEventListener("submit", (evt) => {
   listElement.prepend(createItem(inputElement.value));
   items = getTasksFromDOM();
   saveTasks(items);
-  inputElement.value = "";
+  formElement.reset();
 });
